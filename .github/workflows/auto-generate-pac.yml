@@ -46,6 +46,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git add -A
           git commit -a -m "${commit_message}"
+          git pull
           git push
 
       - name: Trigger Auto-Release
