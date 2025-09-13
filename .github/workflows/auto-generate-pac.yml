@@ -16,11 +16,7 @@ on:
 jobs:
   update-gfw-pac:
     runs-on: ubuntu-latest
-    steps:
-      - name: Pull Latest Respository (first)
-        run: |
-          git pull
-      
+    steps: 
       - name: Checkout repository
         uses: actions/checkout@v4
 
